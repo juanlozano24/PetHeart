@@ -1,0 +1,18 @@
+<h2>Directorio de Animales</h2>
+<div class="container">
+    <div class="row">
+        {% for animal in animales %}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ animal.nombre }}</h5>
+                    <p class="card-text">Ubicación: {{ animal.ubicacion }}</p>
+                    <p class="card-text">Vulnerabilidad: {{ animal.tipo_vulnerabilidad }}</p>
+                    <p class="card-text">{{ animal.descripcion }}</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
